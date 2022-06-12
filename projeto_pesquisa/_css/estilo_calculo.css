@@ -1,0 +1,112 @@
+
+:root
+{
+    --cor-barra-lateral: rgb(0, 0, 0);
+    --cor-letra-sem-hover: rgb(99, 99, 99);
+}
+
+/*
+    barra lateral:
+*/
+
+body
+{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.estrutura_base
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+
+}
+
+.barra_lateral
+{
+    width: 20%;
+    height: 100vh;
+    background-color: var(--cor-barra-lateral);
+    position: fixed;
+    font-size: 25px;
+    text-align: center;
+}
+
+.quebra_gradiente
+{
+    background-color: black;
+    height: 3vh;
+}
+
+.barra_lateral a
+{
+    width: 10%;
+    text-decoration: none;
+    color: var(--cor-letra-sem-hover);
+    margin: 10% 0% 10% 0;
+}
+
+.barra_lateral li:hover
+{
+    transition: 0.5s;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 2%, rgb(0, 0, 0, 1) 2%);
+    
+}
+
+.barra_lateral a:hover
+{
+    transition: 0.5s;
+    color: white;
+}
+
+.logo
+{
+    margin: 10% 0% 10% 0%;
+    filter: invert(100);
+}
+
+.mapa_bairro_novo
+{
+    text-align: center;
+}
+
+.sitio_cercado
+{
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    right: 0;
+}
+
+.sitio_cercado:hover
+{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.umbara
+{
+    position: absolute;
+    top: 27%;
+    left: 34%;
+}
+
+.umbara:hover
+{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.ganchinho
+{
+    position: absolute;
+    top: 31%;
+    left: 49%;
+}
+
+.ganchinho:hover
+{
+    transition: 0.5s;
+    transform: scale(1.2);
+}

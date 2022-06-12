@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/_css/reset.css">
+    <link rel="stylesheet" href="/_css/estilo_sitio_cercado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+    <title>Pesquisa Aplicada e Meio Ambiente</title>
+
+</head>
+
+<body>
+
+    <div class="estrutura_base">
+
+        <!-- navegacao lateral -->
+
+        <div class="barra_lateral">
+
+            <img class="logo" src="/_img/plant-tec.png" alt="logo_site">
+           
+            <ul>
+                
+                    <br><li>
+                        <a href="/_html/principal.html">INICIO</a>  
+                    </li>
+                
+                    <br><li>
+                        <a href="/_html/calculo.html">CALCULO</a>
+                    </li>
+
+                    <br><li>
+                        <a href="/_html/calculo_av_do_trabalho.html">CALCULO<br>(av do trabalho)</a>
+                    </li>
+
+                    <br><li>
+                        <a href="/_html/sobre.html">SOBRE</a>
+                    </li>
+                
+            </ul>
+
+        </div>
+
+        <div class="conteudo">
+
+            <header class="cabecalho">
+                <!-- sem conteudo -->
+            </header>
+
+            <main class="menu">
+
+                <p class="titulo_mapa">Mapa: Sítio Cercado</p><br>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20697.445731915657!2d-49.280409935083895!3d-25.542674720240964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb9394dc013d%3A0x4d1eeb709316f4b6!2sS%C3%ADtio%20Cercado%2C%20Curitiba%20-%20PR!5e1!3m2!1spt-BR!2sbr!4v1654388891134!5m2!1spt-BR!2sbr" style="border: 2px solid black; border-radius: 5px;" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <section class="formulario">
+
+                    <form action="#">
+
+                        <!-- potencia e combustivel -->
+
+                        <br><p class="informativo">Digite a porcentagem dos carros com determinada potencia e combustivel:</p><br>
+                        <label class = "pergunta" for="10a">Pequeno a gasolina(1.0 a 1.4):</label> 
+                        <input type="number" max="100" min="0" id="10a" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="10b">Medio a gasolina(1.5 a 2.0):</label> 
+                        <input type="number" max="100" min="0" id="10b" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="10c">Grande a gasolina(2.0 em diante):</label> 
+                        <input type="number" max="100" min="0" id="10c" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="20a">Pequeno a alcool(1.0 a 1.4):</label> 
+                        <input type="number" max="100" min="0" id="20a" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="20b">Medio a alcool(1.5 a 2.0):</label> 
+                        <input type="number" max="100" min="0" id="20b" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="20c">Grande a alcool(2.0 em diante):</label> 
+                        <input type="number" max="100" min="0" id="20c" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="30a">Pequeno a GNV(1.0 a 1.4):</label> 
+                        <input type="number" max="100" min="0" id="30a" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="30b">Medio a GNV(1.5 a 2.0):</label>
+                        <input type="number" max="100" min="0" id="30b" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="30c">Grande a GNV(2.0 em diante):</label> 
+                        <input type="number" max="100" min="0" id="30c" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="40a">Pequeno a flex(1.0 a 1.4):</label> 
+                        <input type="number" max="100" min="0" id="40a" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="40b">Medio a flex(1.5 a 2.0):</label> 
+                        <input type="number" max="100" min="0" id="40b" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="40c">Grande a flex(2.0 em diante):</label> 
+                        <input type="number" max="100" min="0" id="40c"  value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <p class="informativo">Digite a porcentagem dos tipos de atividades economicas:</p> <br>
+
+                        <!-- micro -->
+
+                        <label class = "pergunta" for="micro_presencial">Micro presencial:</label>
+                        <input type="number" id="micro_presencial" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="micro_remoto_servico">Micro com trabalho remoto relacionado ao serviço:</label>
+                        <input type="number" id="micro_remoto_servico" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="micro_remoto_educacao">Micro com trabalho remoto relacionado a educação:</label>
+                        <input type="number" id="micro_remoto_educacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="micro_remoto_comunicacao">Micro com trabalho remoto relacionado a comunicação:</label>
+                        <input type="number" id="micro_remoto_comunicacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <!-- pequena -->
+
+                        <label class = "pergunta" for="pequena_presencial">Pequena presencial:</label>
+                        <input type="number" id="pequena_presencial" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="pequena_remoto_servico">Pequena com trabalho remoto relacionado ao serviço:</label>
+                        <input type="number" id="pequena_remoto_servico" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="pequena_remoto_educacao">Pequena com trabalho remoto relacionado a educação:</label>
+                        <input type="number" id="pequena_remoto_educacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="pequena_remoto_comunicacao">Pequena com trabalho remoto relacionado a comunicação:</label>
+                        <input type="number" id="pequena_remoto_comunicacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <!-- media -->
+
+                        <label class = "pergunta" for="media_presencial">Media presencial:</label>
+                        <input type="number" id="media_presencial" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="media_remoto_servico">Media com trabalho remoto relacionado ao serviço:</label>
+                        <input type="number" id="media_remoto_servico" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="media_remoto_educacao">Media com trabalho remoto relacionado a educação:</label>
+                        <input type="number" id="media_remoto_educacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="media_remoto_comunicacao">Media com trabalho remoto relacionado a comunicação:</label>
+                        <input type="number" id="media_remoto_comunicacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <!-- grande -->
+
+                        <label class = "pergunta" for="grande_presencial">Grande presencial:</label>
+                        <input type="number" id="grande_presencial" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="grande_remoto_servico">Grande com trabalho remoto relacionado ao serviço:</label>
+                        <input type="number" id="grande_remoto_servico" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="grande_remoto_educacao">Grande com trabalho remoto relacionado a educação:</label>
+                        <input type="number" id="grande_remoto_educacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <label class = "pergunta" for="grande_remoto_comunicacao">Grande com trabalho remoto relacionado a comunicação:</label>
+                        <input type="number" id="grande_remoto_comunicacao" value="0" required placeholder="0"><p class="especificador">digite o valor sem o simbolo '%'</p><br>
+
+                        <p class="informativo">Informações importantes:</p><br>
+
+                        
+                        <label class = "pergunta" for="numero_atividades_economicas">Digite a quantidade de atividades economicas do local:</label>
+                        <input type="number" id="numero_atividades_economicas" value="0" required><p class="especificador">valor numerico inteiro</p><br>
+
+                        <label class = "pergunta" for="local">Avenida/Bloco?('a' para avenida ou 'b' para bloco)</label>
+                        <input type="text" name="local" id = "local" maxlength="1" required><p class="especificador">digite 'a' ou 'b'</p><br>
+
+                        <label class = "pergunta" for="efeito_climatico">Está chovendo?('s' para sim ou 'n' para não)</label>
+                        <input type="text" name="local" id = "efeito_climatico" maxlength="1" required><p class="especificador">digite 's' ou 'n'</p><br>
+
+                        <!-- botao -->
+
+                       <button class = "botao" onclick="porcentagem_validacao()">calcular</button>
+
+                    </form>
+
+                     <!-- resultado -->
+
+                    <p id="resultado">resultado: não calculado</p><br>
+
+                </section>
+
+            </main>
+
+            <footer class="rodape">
+                <!-- sem conteudo -->
+            </footer>
+
+        </div>
+
+    </div>
+        
+</body>
+
+</html>
