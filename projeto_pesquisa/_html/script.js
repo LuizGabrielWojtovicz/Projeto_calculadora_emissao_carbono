@@ -1,10 +1,10 @@
 
 /**
  * 
- * @version: "1.0",
- * @author: "Luiz Gabriel Wojtovicz",
- * @throws: "true",
- * @copyright: "Luiz Gabriel Wojtovicz"
+ * @version 1.0,
+ * @author Luiz Gabriel Wojtovicz"
+ * @throws
+ * @copyright 
  * 
  * /dados da pesquisa:/
  * 
@@ -12,6 +12,8 @@
  * @link https://conube.com.br/blog/como-definir-o-porte-da-empresa/
  * @link https://www.prestus.com.br/empreendedorismo/de-quantos-funcionarios-voce-realmente-precisa/
  * @link https://www.cnnbrasil.com.br/business/maioria-aprova-o-home-office-mas-ha-preocupacao-com-excesso-de-trabalho/#:~:text=No%20setor%20privado%2C%20segundo%20a%20pesquisa%2C%20destacam-se%20no,estaduais%20%2813%2C9%25%29%20e%20empregados%20do%20governo%20federal%20%287%2C8%25%29.
+ * @link https://tribunapr-uol-com-br.cdn.ampproject.org/v/s/tribunapr.uol.com.br/conteudo-publicitario/magnetron/dias-chuvosos-aumentam-risco-de-acidentes-em-40-saiba-como-se-proteger/amp/?amp_js_v=a6&amp_gsa=1&usqp=mq331AQKKAFQArABIIACAw%3D%3D#aoh=16521331991282&referrer=https%3A%2F%2Fwww.google.com&amp_tf=Fonte%3A%20%251%24s&ampshare=https%3A%2F%2Ftribunapr.uol.com.br%2Fconteudo-publicitario%2Fmagnetron%2Fdias-chuvosos-aumentam-risco-de-acidentes-em-40-saiba-como-se-proteger%2F
+ * @link http://www.vias-seguras.com/comportamentos/contra_o_excesso_de_velocidade/limites_de_velocidade#:~:text=Principalmente%3A%20%C2%B7%20Nas%20vias%20urbanas%2C%20o%20limite%20de,velocidade%20n%C3%A3o%20deve%20exceder%2050%20km%2Fh%20neste%20caso.
  * 
  **/
 
