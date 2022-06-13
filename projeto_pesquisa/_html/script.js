@@ -431,8 +431,10 @@ const bairro_ganchinho = () =>
 */
 
 
-function porcentagem_validacao ()
+function porcentagem_validacao (ev)
 {
+    // debugger    
+    ev.preventDefault()
 
 
     let a01 = parseFloat(document.getElementById("10a").value);
@@ -650,6 +652,9 @@ function porcentagem_validacao ()
             quantidade_funcionarios_atividade_economica_grande_remoto_servico +
             quantidade_funcionarios_atividade_economica_grande_remoto_educacao +
             quantidade_funcionarios_atividade_economica_grande_remoto_comunicacao;
+            quantidade_clientes_atividade_economica_com_carro = quantidade_clientes_atividade_economica / 4;
+            quantidade_funcionarios_atividade_economica_com_carro = quantidade_funcionarios_atividade_economica / 4;
+            quantidade_clientes_e_funcionarios_atividade_economica_com_carro = quantidade_clientes_atividade_economica_com_carro + quantidade_funcionarios_atividade_economica_com_carro;
 
                         //kms percorridos:
 
@@ -675,10 +680,7 @@ function porcentagem_validacao ()
 
             //quantidade de funcionarios e clientes com carro:
 
-            quantidade_clientes_atividade_economica_com_carro = quantidade_clientes_atividade_economica / 4;
-            quantidade_funcionarios_atividade_economica_com_carro = quantidade_funcionarios_atividade_economica / 4;
-            quantidade_clientes_e_funcionarios_atividade_economica_com_carro = quantidade_clientes_atividade_economica_com_carro + quantidade_funcionarios_atividade_economica_com_carro;
-
+       
 
             emissao_combustivel_gasolina_potencia_10_14_por_clientes_e_habitantes = ((km_percorrido_por_clientes_e_habitantes * combustivel_gasolina_potencia_10_14) / 100) * gasolina[0];
             emissao_combustivel_gasolina_potencia_15_20_por_clientes_e_habitantes = ((km_percorrido_por_clientes_e_habitantes * combustivel_gasolina_potencia_15_20) / 100) * gasolina[1];
@@ -695,6 +697,7 @@ function porcentagem_validacao ()
             emissao_combustivel_flex_potencia_10_14_por_clientes_e_habitantes = ((km_percorrido_por_clientes_e_habitantes * combustivel_flex_potencia_10_14) / 100) * flex[0];
             emissao_combustivel_flex_potencia_15_20_por_clientes_e_habitantes = ((km_percorrido_por_clientes_e_habitantes * combustivel_flex_potencia_15_20) / 100) * flex[1];
             emissao_combustivel_flex_potencia_20__por_clientes_e_habitantes = ((km_percorrido_por_clientes_e_habitantes * combustivel_flex_potencia_20_) / 100) * flex[2];
+            // debugger
 
             emissao_de_carbono_por_clientes_e_habitantes = 
             emissao_combustivel_gasolina_potencia_10_14_por_clientes_e_habitantes +
@@ -742,7 +745,7 @@ function porcentagem_validacao ()
             emissao_combustivel_flex_potencia_15_20_por_todos +
             emissao_combustivel_flex_potencia_20__por_todos;
 
-            emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
+            
 
             // atividade_economica_presencial_porcentagem = (100 * atividade_economica_presencial) / total_atividades_economicas;
             // atividade_economica_remoto_servico_porcentagem = (100 * atividade_economica_remoto_educacao) / total_atividades_economicas;
@@ -764,6 +767,7 @@ function porcentagem_validacao ()
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos_com_efeito_climatico.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
 
@@ -782,6 +786,7 @@ function porcentagem_validacao ()
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
             }
@@ -799,6 +804,7 @@ function porcentagem_validacao ()
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos_com_efeito_climatico.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
             }
@@ -816,6 +822,7 @@ function porcentagem_validacao ()
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
             }
@@ -826,5 +833,10 @@ function porcentagem_validacao ()
             document.getElementById("resultado")
             .innerHTML = "Há um erro nas informações digitadas";
         }
+
+    // porcentagem_validacao(ev)
     
 }
+
+
+document.getElementById('form').addEventListener('submit', porcentagem_validacao)
