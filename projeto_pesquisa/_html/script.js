@@ -768,7 +768,6 @@ function porcentagem_validacao (ev)
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
                 emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
-                debugger
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos_com_efeito_climatico.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
 
@@ -787,6 +786,7 @@ function porcentagem_validacao (ev)
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
             }
@@ -804,6 +804,7 @@ function porcentagem_validacao (ev)
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos_com_efeito_climatico.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
             }
@@ -821,6 +822,7 @@ function porcentagem_validacao (ev)
                 km_percorrido_por_todos = km_percorrido_por_clientes_e_funcionarios + (quantidade_habitantes_com_carro * km_percorrido_em_minuto);
                 km_percorrido_por_clientes_e_habitantes = (quantidade_habitantes_com_carro * km_percorrido_em_minuto) + km_percorrido_por_clientes;
 
+                emissao_de_carbono_por_todos_com_efeito_climatico = emissao_de_carbono_por_todos + ((40 * emissao_de_carbono_por_todos) / 100);
                 document.getElementById("resultado")
                 .innerHTML = emissao_de_carbono_por_todos.toFixed(2) + " kg de CO2eq é gerado pelos carros em um período de uma hora";
             }
