@@ -1,10 +1,10 @@
 
 /**
  * 
- * @version 1.0
- * @author Luiz Gabriel Wojtovicz
- * @throws
- * @copyright
+ * @version: "1.0",
+ * @author: "Luiz Gabriel Wojtovicz",
+ * @throws: "true",
+ * @copyright: "Luiz Gabriel Wojtovicz"
  * 
  * /dados da pesquisa:/
  * 
