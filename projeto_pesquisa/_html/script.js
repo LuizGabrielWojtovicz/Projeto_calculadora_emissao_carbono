@@ -483,9 +483,9 @@ function porcentagem_validacao (ev)
         if((a01 + b01 + c01 + a02 + b02 + c02 + a03 + b03 + c03 + a04 + b04 + c04) == 100 
         && (mp + mrs + mre + mrc + pp + prs + pre + prc + mep + mers + mere + merc + gp + grs + gre + grc) == 100)
         {
-            habitantes_umbara_com_carro = habitantes_umbara / 4.0;
-            habitantes_sitio_cercado_com_carro = habitantes_sitio_cercado / 4.0;
-            habitantes_ganchinho_com_carro = habitantes_ganchinho / 4.0;
+            habitantes_umbara_com_carro = (habitantes_umbara / 4.0) / 185;
+            habitantes_sitio_cercado_com_carro = (habitantes_sitio_cercado / 4.0) / 553;
+            habitantes_ganchinho_com_carro = (habitantes_ganchinho / 4.0) / 79;
 
             combustivel_gasolina_potencia_10_14 = a01;
             combustivel_gasolina_potencia_15_20 = b01;
